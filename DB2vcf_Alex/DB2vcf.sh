@@ -10,7 +10,7 @@
 genoDB=$1
 intervalList=$2
 intervalName=$(head -n $3 $intervalList | tail -n 1)
-outputVCF=/n/holyscratch01/informatics/alex_lg/CodGenotyping/Gmo_DB2VCF/Gmor_$2_$3.int.vcf.gz
+outputVCF=Gmo_$intervalName.vcf.gz
 
 module load Anaconda3/5.0.1-fasrc02
 source activate gatk
